@@ -1,0 +1,282 @@
+:root{--green:#2e7d32;--blue:#1565c0;--red:#c62828;--amber:#f9a825;--bg:#f4f7fb;--card:#fff;--text:#17202a;--muted:#5f6c7b;--line:#d7dee8;--focus:#ff9800}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:18px}.topbar{height:70px;background:var(--green);color:white;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;box-shadow:0 2px 12px #0002}.topbar strong{font-size:1.45rem;margin-right:14px}#customerBadge{background:#ffffff22;border:2px solid #ffffff55;border-radius:999px;padding:8px 12px}.topActions{display:flex;gap:10px}.app{height:calc(100vh - 70px);overflow:hidden;padding:12px}.screen{height:100%;display:flex;flex-direction:column;gap:12px}.shopGrid{height:100%;display:grid;grid-template-columns:220px 1fr 320px;gap:12px;min-height:0}.panel{background:var(--card);border-radius:22px;padding:14px;box-shadow:0 3px 16px #0001;min-height:0}.catPanel,.cartPanel{display:flex;flex-direction:column;gap:10px}.catList{display:flex;flex-direction:column;gap:8px;overflow:auto}.catBtn{border:0;border-radius:16px;padding:14px;text-align:left;font-weight:800;font-size:1rem;cursor:pointer;background:#e8f5e9;color:#123}.catBtn.active{outline:4px solid var(--focus);background:#c8e6c9}.productPanel{display:flex;flex-direction:column;gap:10px}.productHeader{display:flex;justify-content:space-between;align-items:center}.productGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;overflow:auto;padding:4px}.productCard{border:3px solid var(--line);border-radius:20px;background:white;min-height:155px;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;cursor:pointer}.productCard:active,.moneyBtn:active,.primary:active,.secondary:active{transform:scale(.97)}.productCard:focus-visible,.moneyBtn:focus-visible,button:focus-visible{outline:5px solid var(--focus);outline-offset:2px}.productCard img{width:78px;height:78px;object-fit:contain}.productName{font-weight:800;text-align:center;font-size:.92rem;line-height:1.1}.price{font-weight:900;color:var(--blue);font-size:1.1rem}.cartItems{flex:1;overflow:auto;display:flex;flex-direction:column;gap:8px}.cartRow{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;border-bottom:2px solid var(--line);padding-bottom:8px}.cartName{font-weight:800}.cartMeta{color:var(--muted);font-size:.9rem}.qty{display:flex;gap:6px;align-items:center}.qty button{width:40px;height:40px;border:0;border-radius:12px;font-size:1.3rem;font-weight:900;color:white;background:var(--green)}.qty .minus{background:var(--red)}.totalBox{border-top:4px solid var(--line);padding-top:12px;font-size:1.2rem;font-weight:900;display:flex;justify-content:space-between}.checkoutFooter{display:grid;grid-template-columns:1fr;gap:10px}.primary,.secondary,.danger,.ghost{border:0;border-radius:18px;padding:16px 18px;font-size:1.05rem;font-weight:900;cursor:pointer}.primary{background:var(--green);color:white}.secondary{background:var(--blue);color:white}.danger{background:var(--red);color:white}.ghost{background:#ffffff22;color:inherit;border:2px solid #ffffff55;padding:10px 14px}.ghost.dark{color:var(--text);background:#eef3f8;border-color:var(--line)}.payScreen,.changeScreen,.doneScreen{max-width:1050px;margin:0 auto;width:100%;height:100%;display:grid;grid-template-rows:auto 1fr auto;gap:12px}.paySummary{display:grid;grid-template-columns:1fr 1fr;gap:12px}.bigAmount{background:white;border-radius:24px;padding:16px;text-align:center;box-shadow:0 3px 16px #0001}.bigAmount span{display:block;color:var(--muted);font-weight:800}.bigAmount strong{font-size:clamp(2.3rem,6vw,4.8rem);line-height:1;color:var(--green)}.moneyArea{background:white;border-radius:24px;padding:14px;min-height:0;box-shadow:0 3px 16px #0001;display:grid;grid-template-columns:1fr 1fr;gap:14px}.moneyGroup{min-height:0}.moneyGroup h2{margin:0 0 8px}.moneyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.coinGrid{grid-template-columns:repeat(4,1fr)}.moneyBtn{border:3px solid var(--line);border-radius:18px;background:#fff;padding:8px;min-height:88px;cursor:pointer;font-weight:900;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-direction:column}.moneyBtn img{max-width:100%;height:58px;object-fit:contain}.coinGrid .moneyBtn img{height:54px}.paidChips,.changeList{display:flex;flex-wrap:wrap;gap:8px;overflow:auto;max-height:125px}.chip{display:flex;align-items:center;gap:6px;background:#eef6ff;border:2px solid #c7ddff;border-radius:999px;padding:7px 10px;font-weight:900}.chip img{width:48px;height:28px;object-fit:contain}.changeScreen{text-align:center}.changeMain{background:white;border-radius:28px;padding:18px;box-shadow:0 3px 16px #0001;min-height:0;display:flex;flex-direction:column;gap:12px}.changeMain h1,.doneScreen h1{font-size:clamp(2rem,5vw,4rem);margin:0}.changeTotal{font-size:clamp(3rem,8vw,6rem);font-weight:900;color:var(--green);line-height:1}.changeList{justify-content:center;max-height:none}.changeItem{border:3px solid var(--line);border-radius:22px;background:white;padding:10px;min-width:120px;min-height:105px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;cursor:pointer}.changeItem img{height:60px;max-width:110px}.hint{color:var(--muted);font-weight:800}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.doneScreen{place-items:center;text-align:center}.doneCard{background:white;border-radius:32px;padding:32px;box-shadow:0 3px 16px #0001}.stars{font-size:4rem}.dialog{border:0;border-radius:24px;padding:24px;max-width:560px;font-size:1.1rem}.dialog.wide{max-width:900px;width:90vw}.dialog::backdrop{background:#0008}.dialogActions{display:flex;gap:10px;justify-content:flex-end}.reportTable{width:100%;border-collapse:collapse}.reportTable th,.reportTable td{border-bottom:2px solid var(--line);padding:8px;text-align:left}@media(max-width:900px){.app{overflow:auto;height:auto;min-height:calc(100vh - 70px)}.shopGrid{grid-template-columns:1fr;height:auto}.catList{display:grid;grid-template-columns:repeat(2,1fr);max-height:none}.cartPanel{min-height:300px}.payScreen,.changeScreen,.doneScreen{height:auto;min-height:calc(100vh - 94px)}.paySummary,.moneyArea{grid-template-columns:1fr}.moneyGrid{grid-template-columns:repeat(2,1fr)}.coinGrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-height:760px) and (min-width:901px){body{font-size:16px}.topbar{height:58px}.app{height:calc(100vh - 58px);padding:8px}.panel{padding:10px}.productCard{min-height:128px}.productCard img{width:58px;height:58px}.bigAmount{padding:10px}.moneyBtn{min-height:70px}.moneyBtn img{height:42px}.coinGrid .moneyBtn img{height:40px}.changeItem{min-height:88px}.changeItem img{height:45px}}
+.practiceHint{margin:4px 0 0;color:var(--blue);font-weight:900}.teacherGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:12px 0}.teacherGrid label{background:#f2f6fb;border:2px solid var(--line);border-radius:18px;padding:14px;font-weight:900;display:flex;gap:10px;align-items:center}.teacherGrid input{width:26px;height:26px}.teacherGrid select{font-size:1rem;border-radius:12px;padding:8px;border:2px solid var(--line);font-weight:900}.largeMode{font-size:22px}.contrastMode{--bg:#000;--card:#fff;--text:#000;--muted:#111;--line:#000;--green:#006b2d;--blue:#0047a8;--red:#b00020;--focus:#ffd400}.contrastMode .topbar{background:#000;color:#fff;border-bottom:5px solid #ffd400}.contrastMode .productCard,.contrastMode .moneyBtn,.contrastMode .changeItem,.contrastMode .panel,.contrastMode .bigAmount,.contrastMode .moneyArea,.contrastMode .changeMain,.contrastMode .doneCard{border:4px solid #000}.contrastMode .ghost{border-color:#fff;background:#222}.contrastMode .ghost.dark{background:#fff;border-color:#000;color:#000}
+.topActions{flex-wrap:wrap;justify-content:flex-end}.moneyBtn img,.changeItem img,.chip img{background:transparent}
+@media(max-width:700px){.topbar{height:auto;align-items:flex-start;gap:8px}.app{min-height:calc(100vh - 104px)}.topbar strong{display:block;margin-bottom:6px}.topActions .ghost{padding:8px 10px;font-size:.9rem}.teacherGrid{grid-template-columns:1fr}}
+
+/* v3.2: Größere Geldsymbole im Kassiervorgang */
+.payScreen{max-width:1280px;gap:8px;grid-template-rows:auto minmax(0,1fr) auto}.paySummary{gap:8px}.bigAmount{padding:10px 14px}.bigAmount span{font-size:.9rem}.bigAmount strong{font-size:clamp(2rem,4.8vw,4.2rem)}.moneyArea{padding:10px;gap:10px;overflow:hidden}.moneyGroup{display:flex;flex-direction:column;min-height:0}.moneyGroup h2{font-size:1.05rem;margin:0 0 6px}.moneyGrid{gap:8px;align-content:start}.moneyBtn{padding:5px;min-height:132px;font-size:.82rem;line-height:1;border-radius:20px;transition:transform .12s,box-shadow .12s,border-color .12s}.moneyBtn span{font-size:.88rem;margin-top:3px}.moneyBtn img{height:104px;max-width:100%;object-fit:contain}.coinGrid .moneyBtn{min-height:126px}.coinGrid .moneyBtn img{height:98px}.moneyBtn:active{transform:scale(1.08);box-shadow:0 0 0 5px #2e7d3233;border-color:var(--green)}.paidChips{max-height:78px}.chip{padding:5px 8px;font-size:.82rem}.chip img{width:56px;height:34px}.actions{gap:8px}.actions .primary,.actions .secondary,.actions .danger{padding:12px 16px;font-size:.95rem}.changeMain{padding:12px}.changeMain h1{font-size:clamp(1.8rem,4vw,3.2rem)}.changeTotal{font-size:clamp(2.6rem,6vw,5rem)}.changeItem{min-width:150px;min-height:138px;padding:8px;font-size:.9rem}.changeItem img{height:96px;max-width:145px}.changeItem span{font-size:.92rem;margin-top:4px}
+.moneyStandard .moneyBtn{min-height:108px}.moneyStandard .moneyBtn img{height:80px}.moneyStandard .coinGrid .moneyBtn{min-height:104px}.moneyStandard .coinGrid .moneyBtn img{height:76px}.moneyStandard .changeItem{min-width:128px;min-height:114px}.moneyStandard .changeItem img{height:72px;max-width:122px}
+.moneyGross .moneyBtn{min-height:142px}.moneyGross .moneyBtn img{height:112px}.moneyGross .coinGrid .moneyBtn{min-height:136px}.moneyGross .coinGrid .moneyBtn img{height:108px}.moneyGross .changeItem{min-width:158px;min-height:148px}.moneyGross .changeItem img{height:104px;max-width:152px}
+.moneyXxl .payScreen{max-width:1400px}.moneyXxl .moneyBtn{min-height:168px}.moneyXxl .moneyBtn img{height:138px}.moneyXxl .coinGrid .moneyBtn{min-height:158px}.moneyXxl .coinGrid .moneyBtn img{height:128px}.moneyXxl .moneyBtn span{font-size:.82rem}.moneyXxl .changeItem{min-width:190px;min-height:176px}.moneyXxl .changeItem img{height:132px;max-width:185px}.moneyXxl .changeItem span{font-size:.86rem}
+@media(min-width:901px){.moneyArea{grid-template-columns:1.08fr .92fr}.moneyGrid{grid-template-columns:repeat(3,minmax(120px,1fr))}.coinGrid{grid-template-columns:repeat(4,minmax(100px,1fr))}.moneyStandard .moneyGrid{grid-template-columns:repeat(4,minmax(100px,1fr))}.moneyStandard .coinGrid{grid-template-columns:repeat(4,minmax(90px,1fr))}.moneyXxl .moneyGrid{grid-template-columns:repeat(3,minmax(150px,1fr))}.moneyXxl .coinGrid{grid-template-columns:repeat(4,minmax(125px,1fr))}}
+@media(max-height:820px) and (min-width:901px){.moneyGross .moneyBtn{min-height:116px}.moneyGross .moneyBtn img{height:88px}.moneyGross .coinGrid .moneyBtn{min-height:108px}.moneyGross .coinGrid .moneyBtn img{height:84px}.moneyXxl .moneyBtn{min-height:132px}.moneyXxl .moneyBtn img{height:104px}.moneyXxl .coinGrid .moneyBtn{min-height:122px}.moneyXxl .coinGrid .moneyBtn img{height:96px}.paySummary .bigAmount strong{font-size:clamp(1.9rem,4vw,3.4rem)}.paidChips{max-height:58px}.moneyArea{padding:8px}}
+@media(max-width:900px){.moneyArea{overflow:visible}.moneyBtn{min-height:120px}.moneyBtn img{height:92px}.coinGrid .moneyBtn img{height:88px}.moneyXxl .moneyBtn{min-height:142px}.moneyXxl .moneyBtn img{height:112px}.moneyXxl .coinGrid .moneyBtn img{height:108px}}
+
+/* Farbige Kategorien wie in der ersten Version */
+.catBtn{color:white;border:3px solid transparent;box-shadow:0 2px 8px #0001;text-shadow:0 1px 1px #0005}
+.catBtn.active{outline:5px solid var(--focus);filter:brightness(1.06)}
+.cat-milch{background:#64B5F6}.cat-gemuese{background:#81C784}.cat-obst{background:#FFB74D}.cat-fleisch{background:#E57373}.cat-wurst{background:#BA68C8}.cat-fisch{background:#4DD0E1}.cat-konserven{background:#A1887F}.cat-getreide{background:#FFD54F;color:#222;text-shadow:none}.cat-gewuerze{background:#90A4AE}.cat-suess{background:#F06292}.cat-sonstiges{background:#9E9E9E}
+
+/* Infobereich */
+.infoSections{display:grid;gap:12px;margin-top:10px}.infoSection{background:#f8fafc;border:2px solid var(--line);border-radius:18px;padding:14px}.infoSection h3{margin:0 0 6px 0}.infoSection p{margin:0;line-height:1.45}.infoDialog{max-height:88vh;overflow:auto}
+
+/* Apple/iPad: klare Touch-Flächen */
+button:disabled{opacity:.45;cursor:not-allowed}
+
+.csvBtn{background:#1565c0!important;color:white}.pdfBtn{background:#6a1b9a!important;color:white}.infoSection p+p{margin-top:10px}.infoSection a{color:#0d47a1;font-weight:800}.practiceHint{background:#fff3cd;border:2px solid #ffe08a;border-radius:14px;padding:8px 10px;font-weight:800}.catBtn{color:white;text-shadow:0 1px 2px #0008}.catBtn.active{outline:5px solid var(--focus);filter:saturate(1.15) brightness(1.03)}
+
+/* v3.5: iPad-Optimierung für Bezahl- und Wechselgeldseite */
+.payFooter{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:stretch;min-height:116px}
+.payFooter .paidChips{max-height:160px;min-height:112px;display:flex;align-items:center;gap:10px;padding:8px;background:#fff;border:3px solid var(--line);border-radius:22px;overflow:auto}
+.payFooter .payHint{font-size:1rem;padding:12px}
+.paidChip{border-radius:18px;background:#eef6ff;border:3px solid #b7d2ff;padding:8px 10px;min-width:112px;min-height:92px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:1rem;color:var(--text)}
+.paidChip img{width:96px!important;height:56px!important;max-width:100%;object-fit:contain}.paidChip span{font-size:.95rem;font-weight:900}.paidChip:active{transform:scale(.94)}
+.payActions{display:grid;grid-template-columns:120px 170px;gap:10px;align-content:stretch}.iconAction{min-height:104px;min-width:104px;padding:10px 12px!important;border-radius:24px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.iconAction .icon{font-size:2.6rem;line-height:1}.iconAction .smallLabel{font-size:.9rem;line-height:1.1}.wideAction{min-width:160px}
+.changeActions{display:grid;grid-template-columns:repeat(3,minmax(110px,170px));justify-content:center;gap:12px}.changeActions .iconAction{min-height:100px}.changeActions .iconAction .icon{font-size:2.5rem}.changeActions .iconAction .smallLabel{font-size:.85rem}
+.changeList{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,170px));justify-content:center;gap:12px;overflow:auto;padding:4px;align-items:stretch}.changeItem{width:100%;min-width:0;min-height:118px;max-height:160px;aspect-ratio:1.12;border-radius:22px;padding:8px}.changeItem img{height:78px;max-width:140px;object-fit:contain}.changeItem span{font-size:.9rem}
+.moneyGross .changeItem,.moneyXxl .changeItem,.moneyStandard .changeItem{min-width:0;min-height:118px}.moneyGross .changeItem img,.moneyXxl .changeItem img{height:84px;max-width:150px}.moneyStandard .changeItem img{height:72px;max-width:130px}
+@media(max-width:900px){.payScreen{grid-template-rows:auto auto auto;min-height:calc(100vh - 94px)}.payFooter{grid-template-columns:1fr;min-height:0}.payFooter .paidChips{min-height:126px;max-height:190px}.payActions{grid-template-columns:1fr 1fr}.iconAction{min-height:112px}.iconAction .icon{font-size:3rem}.iconAction .smallLabel{font-size:.9rem}.paidChip{min-width:118px;min-height:104px}.paidChip img{width:104px!important;height:64px!important}.changeScreen{grid-template-rows:1fr auto}.changeMain{overflow:hidden}.changeList{grid-template-columns:repeat(auto-fit,minmax(125px,1fr));max-height:48vh;overflow:auto}.changeItem{min-height:108px;max-height:145px;aspect-ratio:1.2}.changeItem img{height:72px;max-width:125px}.changeActions{grid-template-columns:repeat(3,1fr);gap:8px}.changeActions .iconAction{min-width:0;min-height:96px;padding:8px!important}.changeActions .iconAction .icon{font-size:2.2rem}.changeActions .iconAction .smallLabel{font-size:.78rem}}
+@media(max-width:520px){.payActions{grid-template-columns:1fr}.changeActions{grid-template-columns:1fr 1fr 1fr}.changeActions .iconAction{min-height:88px}.changeActions .iconAction .icon{font-size:2rem}.changeActions .iconAction .smallLabel{font-size:.72rem}.paidChip{min-width:104px}.payFooter .paidChips{min-height:110px}}
+
+
+/* v3.6: Geld im Bezahlvorgang ohne Kachelrahmen, deutlich größer */
+.payScreen{max-width:1440px}
+.moneyArea{background:#fff;border-radius:28px;padding:12px 14px;gap:12px;overflow:hidden}
+.moneyGroup h2{font-size:1rem;margin:0 0 4px;color:var(--muted)}
+.moneyBtn{
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  border-radius:26px!important;
+  padding:2px!important;
+  min-height:176px!important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:transform .12s ease, filter .12s ease;
+}
+.moneyBtn span{display:none!important}
+.moneyBtn img{height:166px!important;max-width:100%!important;object-fit:contain!important;filter:drop-shadow(0 6px 8px rgba(0,0,0,.18))}
+.coinGrid .moneyBtn{min-height:154px!important}
+.coinGrid .moneyBtn img{height:144px!important;width:auto!important}
+.moneyBtn:active{transform:scale(1.09);filter:brightness(1.05)}
+.moneyBtn:focus-visible{outline:6px solid var(--focus);outline-offset:4px}
+
+/* ausgewähltes Geld unten ebenfalls ohne Rahmen und ohne Betragstext */
+.payFooter .paidChips{
+  border:0!important;
+  background:transparent!important;
+  border-radius:0!important;
+  padding:4px 6px!important;
+  min-height:128px;
+  max-height:180px;
+  align-content:center;
+}
+.paidChip{
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  border-radius:20px!important;
+  padding:2px!important;
+  min-width:128px!important;
+  min-height:112px!important;
+}
+.paidChip span{display:none!important}
+.paidChip img{width:128px!important;height:92px!important;object-fit:contain!important;filter:drop-shadow(0 4px 6px rgba(0,0,0,.16))}
+.paidChip:active{transform:scale(.92)}
+
+/* Geldgrößen im Lehrermodus bleiben erhalten, aber ohne Rahmen */
+.moneyStandard .moneyBtn{min-height:144px!important}.moneyStandard .moneyBtn img{height:132px!important}.moneyStandard .coinGrid .moneyBtn{min-height:126px!important}.moneyStandard .coinGrid .moneyBtn img{height:116px!important}
+.moneyGross .moneyBtn{min-height:176px!important}.moneyGross .moneyBtn img{height:166px!important}.moneyGross .coinGrid .moneyBtn{min-height:154px!important}.moneyGross .coinGrid .moneyBtn img{height:144px!important}
+.moneyXxl .moneyBtn{min-height:210px!important}.moneyXxl .moneyBtn img{height:198px!important}.moneyXxl .coinGrid .moneyBtn{min-height:184px!important}.moneyXxl .coinGrid .moneyBtn img{height:174px!important}
+
+@media(min-width:901px){
+  .moneyArea{grid-template-columns:1fr 1fr}
+  .moneyGrid{grid-template-columns:repeat(2,minmax(180px,1fr));gap:8px 16px}
+  .coinGrid{grid-template-columns:repeat(4,minmax(120px,1fr));gap:4px 10px}
+  .moneyXxl .moneyGrid{grid-template-columns:repeat(2,minmax(220px,1fr))}
+  .moneyXxl .coinGrid{grid-template-columns:repeat(4,minmax(145px,1fr))}
+}
+@media(max-height:820px) and (min-width:901px){
+  .moneyBtn{min-height:142px!important}.moneyBtn img{height:132px!important}
+  .coinGrid .moneyBtn{min-height:118px!important}.coinGrid .moneyBtn img{height:108px!important}
+  .moneyXxl .moneyBtn{min-height:158px!important}.moneyXxl .moneyBtn img{height:148px!important}
+  .moneyXxl .coinGrid .moneyBtn{min-height:134px!important}.moneyXxl .coinGrid .moneyBtn img{height:124px!important}
+  .payFooter .paidChips{min-height:96px;max-height:118px}.paidChip{min-width:104px!important;min-height:88px!important}.paidChip img{width:104px!important;height:74px!important}
+}
+@media(max-width:900px){
+  .moneyArea{gap:10px;overflow:visible}
+  .moneyGrid{grid-template-columns:repeat(2,minmax(150px,1fr));gap:8px 12px}
+  .coinGrid{grid-template-columns:repeat(4,minmax(76px,1fr));gap:4px}
+  .moneyBtn{min-height:158px!important}.moneyBtn img{height:148px!important}
+  .coinGrid .moneyBtn{min-height:112px!important}.coinGrid .moneyBtn img{height:104px!important}
+  .payFooter .paidChips{min-height:116px;max-height:156px}.paidChip{min-width:110px!important;min-height:96px!important}.paidChip img{width:112px!important;height:80px!important}
+}
+@media(max-width:520px){
+  .moneyGrid{grid-template-columns:repeat(2,minmax(120px,1fr))}
+  .coinGrid{grid-template-columns:repeat(2,minmax(120px,1fr))}
+  .moneyBtn{min-height:136px!important}.moneyBtn img{height:126px!important}
+  .coinGrid .moneyBtn{min-height:126px!important}.coinGrid .moneyBtn img{height:116px!important}
+}
+
+/* v3.7: XXL-Geld immer, keine abgeschnittenen Geldbilder, Wechselgeld ohne Rahmen/Text */
+body.moneyXxl .moneyBtn,
+body.moneyXxl .changeItem{background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible!important}
+body.moneyXxl .moneyBtn span,
+body.moneyXxl .changeItem span{display:none!important}
+body.moneyXxl .moneyArea{overflow:visible;align-items:start}
+body.moneyXxl .moneyBtn{min-height:190px;padding:2px 4px;border-radius:0}
+body.moneyXxl .moneyBtn img{height:172px;max-width:100%;object-fit:contain;display:block}
+body.moneyXxl .coinGrid .moneyBtn{min-height:165px}
+body.moneyXxl .coinGrid .moneyBtn img{height:148px}
+body.moneyXxl .moneyBtn:active,
+body.moneyXxl .changeItem:active{transform:scale(1.08);filter:drop-shadow(0 8px 10px rgba(0,0,0,.25))}
+body.moneyXxl .payScreen{max-width:1380px;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden}
+body.moneyXxl .moneyGrid{gap:6px;align-items:center;justify-items:center}
+body.moneyXxl .paidChips{overflow:visible;max-height:none;min-height:100px;align-items:center}
+body.moneyXxl .paidChip{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;min-width:130px;min-height:92px;padding:0}
+body.moneyXxl .paidChip img{width:128px!important;height:84px!important;object-fit:contain;display:block}
+body.moneyXxl .changeScreen{max-width:1380px;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}
+body.moneyXxl .changeMain{overflow:visible;padding:10px 14px;gap:6px;min-height:0}
+body.moneyXxl .changeMain h1{font-size:clamp(1.8rem,3.2vw,3.1rem);line-height:1;margin:0}
+body.moneyXxl .changeTotal{font-size:clamp(2.7rem,5vw,5rem);line-height:1;margin:0}
+body.moneyXxl .changeMain .hint{margin:2px 0 4px 0;font-size:.95rem}
+body.moneyXxl .changeList{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));grid-auto-rows:minmax(140px,auto);gap:8px;overflow:visible;max-height:none;padding:0;align-items:center;justify-items:center}
+body.moneyXxl .changeItem{width:100%;max-width:220px;min-width:0;min-height:140px;max-height:none;aspect-ratio:auto;padding:2px;display:flex;align-items:center;justify-content:center}
+body.moneyXxl .changeItem img{height:132px;max-width:210px;width:auto;object-fit:contain;display:block}
+body.moneyXxl .changeActions{display:grid;grid-template-columns:repeat(3,minmax(120px,190px));gap:10px;justify-content:center;flex-shrink:0}
+body.moneyXxl .changeActions .iconAction{min-height:92px;padding:8px 10px!important}
+body.moneyXxl .changeActions .iconAction .icon{font-size:2.5rem;line-height:1}
+body.moneyXxl .changeActions .iconAction .smallLabel{font-size:.8rem}
+.teacherGrid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+
+@media (max-width:900px){
+  .app{overflow:hidden;height:calc(100vh - 70px);min-height:0;padding:8px}
+  body.moneyXxl .payScreen{height:100%;min-height:0;grid-template-rows:auto minmax(0,1fr) auto}
+  body.moneyXxl .paySummary{grid-template-columns:1fr 1fr}
+  body.moneyXxl .moneyArea{grid-template-columns:1fr 1fr;min-height:0;overflow:visible;padding:8px}
+  body.moneyXxl .moneyGrid{grid-template-columns:repeat(2,1fr);gap:4px}
+  body.moneyXxl .coinGrid{grid-template-columns:repeat(2,1fr)}
+  body.moneyXxl .moneyBtn{min-height:118px}
+  body.moneyXxl .moneyBtn img{height:108px}
+  body.moneyXxl .coinGrid .moneyBtn{min-height:96px}
+  body.moneyXxl .coinGrid .moneyBtn img{height:86px}
+  body.moneyXxl .payFooter{grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+  body.moneyXxl .payFooter .paidChips{min-height:88px;max-height:88px;overflow:hidden}
+  body.moneyXxl .paidChip{min-width:94px;min-height:74px}
+  body.moneyXxl .paidChip img{width:92px!important;height:66px!important}
+  body.moneyXxl .payActions{grid-template-columns:1fr;min-width:135px}
+  body.moneyXxl .payActions .iconAction{min-height:78px;padding:8px!important}
+  body.moneyXxl .payActions .iconAction .icon{font-size:2.1rem}
+  body.moneyXxl .payActions .iconAction .smallLabel{font-size:.74rem}
+  body.moneyXxl .changeScreen{height:100%;min-height:0;grid-template-rows:minmax(0,1fr) auto}
+  body.moneyXxl .changeMain{overflow:hidden;min-height:0}
+  body.moneyXxl .changeList{grid-template-columns:repeat(auto-fit,minmax(135px,1fr));grid-auto-rows:minmax(104px,auto);gap:4px;overflow:hidden}
+  body.moneyXxl .changeItem{min-height:104px;max-width:180px}
+  body.moneyXxl .changeItem img{height:98px;max-width:170px}
+  body.moneyXxl .changeActions{grid-template-columns:repeat(3,1fr);gap:6px}
+  body.moneyXxl .changeActions .iconAction{min-height:76px;padding:6px!important}
+  body.moneyXxl .changeActions .iconAction .icon{font-size:2rem}
+  body.moneyXxl .changeActions .iconAction .smallLabel{font-size:.68rem}
+}
+
+@media (max-height:760px) and (min-width:901px){
+  body.moneyXxl .moneyBtn{min-height:142px}
+  body.moneyXxl .moneyBtn img{height:128px}
+  body.moneyXxl .coinGrid .moneyBtn{min-height:126px}
+  body.moneyXxl .coinGrid .moneyBtn img{height:112px}
+  body.moneyXxl .changeList{grid-template-columns:repeat(auto-fit,minmax(145px,1fr));grid-auto-rows:minmax(112px,auto);gap:6px}
+  body.moneyXxl .changeItem{min-height:112px;max-width:190px}
+  body.moneyXxl .changeItem img{height:104px;max-width:180px}
+  body.moneyXxl .changeActions .iconAction{min-height:78px}
+}
+
+/* v3.8: Sprachbuttons nur auf Wunsch, größere Geldscheine, kompakter Wechselgeldschirm */
+.listenMini{
+  border:0;
+  border-radius:999px;
+  background:var(--blue);
+  color:#fff;
+  width:54px;
+  height:54px;
+  font-size:1.8rem;
+  line-height:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:6px;
+  cursor:pointer;
+  box-shadow:0 3px 10px rgba(0,0,0,.18);
+}
+.listenMini:active{transform:scale(.94)}
+.bigAmount{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:118px}
+.bigAmount .listenMini{position:absolute;right:12px;top:12px;margin:0}
+.moneyBtn.noteMoney img{height:230px!important;max-width:100%!important}
+.moneyBtn.noteMoney{min-height:238px!important}
+.moneyBtn.coinMoney img{height:164px!important}
+.moneyBtn.coinMoney{min-height:174px!important}
+.moneyArea{align-items:stretch;overflow:visible!important}
+.moneyGroup{justify-content:center}
+.changeMain{align-items:center;justify-content:flex-start;text-align:center;overflow:visible!important}
+.changeListen{margin:0 auto 2px auto;width:60px;height:60px;font-size:2rem}
+.changeList{
+  width:100%;
+  display:grid!important;
+  grid-template-columns:repeat(auto-fit,minmax(125px,max-content))!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:2px 6px!important;
+  padding:0 6px!important;
+  overflow:visible!important;
+  max-height:none!important;
+}
+.changeItem{width:auto!important;min-width:112px!important;max-width:230px!important;min-height:112px!important;padding:0!important;margin:0!important}
+.changeItem.noteChange img{height:150px!important;max-width:220px!important}
+.changeItem.noteChange{min-width:190px!important;min-height:154px!important}
+.changeItem.coinChange img{height:116px!important;max-width:128px!important}
+.changeItem.coinChange{min-width:122px!important;min-height:122px!important}
+.changeActions{grid-template-columns:repeat(2,minmax(150px,220px))!important}
+.goodbyeBtn{font-size:1.25rem!important;padding:22px 28px!important;max-width:620px}
+.teacherGrid label{min-height:72px}
+
+@media(max-width:900px){
+  .bigAmount{min-height:88px;padding:8px 58px 8px 10px!important}
+  .bigAmount span{font-size:.8rem!important}
+  .bigAmount strong{font-size:clamp(1.65rem,5.2vw,3.2rem)!important}
+  .bigAmount .listenMini{width:46px;height:46px;font-size:1.55rem;right:8px;top:50%;transform:translateY(-50%)}
+  body.moneyXxl .moneyBtn.noteMoney{min-height:154px!important}
+  body.moneyXxl .moneyBtn.noteMoney img{height:146px!important}
+  body.moneyXxl .moneyBtn.coinMoney{min-height:102px!important}
+  body.moneyXxl .moneyBtn.coinMoney img{height:92px!important}
+  body.moneyXxl .moneyArea{gap:4px!important;padding:4px!important}
+  body.moneyXxl .moneyGrid{gap:2px 4px!important}
+  body.moneyXxl .coinGrid{gap:0 2px!important}
+  body.moneyXxl .payFooter .paidChips{min-height:78px!important;max-height:78px!important}
+  body.moneyXxl .paidChip{min-width:100px!important;min-height:70px!important}
+  body.moneyXxl .paidChip img{width:100px!important;height:68px!important}
+  body.moneyXxl .changeMain{gap:2px!important;padding:6px!important;justify-content:flex-start;overflow:visible!important}
+  body.moneyXxl .changeMain h1{font-size:clamp(1.45rem,4vw,2.4rem)!important}
+  body.moneyXxl .changeTotal{font-size:clamp(2.1rem,6vw,4rem)!important}
+  .changeListen{width:48px;height:48px;font-size:1.55rem}
+  body.moneyXxl .changeMain .hint{font-size:.78rem!important;margin:0!important}
+  body.moneyXxl .changeList{grid-template-columns:repeat(auto-fit,minmax(108px,max-content))!important;grid-auto-rows:auto!important;gap:0 3px!important;align-content:center!important;overflow:visible!important}
+  body.moneyXxl .changeItem.noteChange{min-width:150px!important;min-height:116px!important;max-width:170px!important}
+  body.moneyXxl .changeItem.noteChange img{height:112px!important;max-width:166px!important}
+  body.moneyXxl .changeItem.coinChange{min-width:104px!important;min-height:104px!important;max-width:112px!important}
+  body.moneyXxl .changeItem.coinChange img{height:98px!important;max-width:106px!important}
+  body.moneyXxl .changeActions{grid-template-columns:repeat(2,minmax(120px,1fr))!important;gap:6px!important}
+}
+@media(max-height:760px) and (min-width:901px){
+  .bigAmount{min-height:92px}
+  .bigAmount .listenMini{width:46px;height:46px;font-size:1.5rem}
+  body.moneyXxl .moneyBtn.noteMoney{min-height:162px!important}
+  body.moneyXxl .moneyBtn.noteMoney img{height:154px!important}
+  body.moneyXxl .moneyBtn.coinMoney{min-height:128px!important}
+  body.moneyXxl .moneyBtn.coinMoney img{height:118px!important}
+  body.moneyXxl .changeItem.noteChange{min-height:126px!important;min-width:165px!important}
+  body.moneyXxl .changeItem.noteChange img{height:122px!important;max-width:178px!important}
+  body.moneyXxl .changeItem.coinChange{min-height:104px!important;min-width:108px!important}
+  body.moneyXxl .changeItem.coinChange img{height:98px!important;max-width:110px!important}
+}
